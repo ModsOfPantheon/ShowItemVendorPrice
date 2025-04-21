@@ -27,13 +27,6 @@ public class UIItemTooltipHooks
         var copper = coinValue;
         
         var merchantValueRoot = UIItemTooltip.Instance.merchantValueRoot;
-
-        // Don't tamper with gameobjects if the merchant value is already active
-        if (merchantValueRoot.active)
-        {
-            return;
-        }
-        
         merchantValueRoot.active = true;
 
         var mithrilText = merchantValueRoot.transform.GetChild(1);
